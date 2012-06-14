@@ -1,0 +1,33 @@
+%p#notice= notice
+
+%p
+  %b Filename:
+  = @document.filename
+%p
+  %b Type:
+  = @document.documenttype
+%p
+  %b Firm:
+  = @document.firm
+%p
+  %b Fund:
+  = @document.fund
+%p
+  %b Month:
+  = @document.month
+%p
+  %b Year:
+  = @document.year
+%p
+  %b Group:
+  = @document.group
+%p
+  %b Investmentcat:
+  = @document.investmentcat
+%p
+  %b Url:
+  = @document.url
+
+= link_to 'Edit', edit_document_path(@document)
+\|
+= link_to 'Back', documents_path

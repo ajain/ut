@@ -1,0 +1,135 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+
+$darkblue: #1C75BC;
+$lightgrey: #F1F2F2;
+
+@font-face {
+    font-family: 'ColaborateThinRegular';
+    src: font-url('ColabThi-webfont.eot');
+    src: font-url('ColabThi-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('ColabThi-webfont.woff') format('woff'),
+         font-url('ColabThi-webfont.ttf') format('truetype'),
+         font-url('ColabThi-webfont.svg#ColaborateThinRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ColaborateLightRegular';
+    src: font-url('ColabLig-webfont.eot');
+    src: font-url('ColabLig-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('ColabLig-webfont.woff') format('woff'),
+         font-url('ColabLig-webfont.ttf') format('truetype'),
+         font-url('ColabLig-webfont.svg#ColaborateLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ColaborateRegular';
+    src: font-url('ColabReg-webfont.eot');
+    src: font-url('ColabReg-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('ColabReg-webfont.woff') format('woff'),
+         font-url('ColabReg-webfont.ttf') format('truetype'),
+         font-url('ColabReg-webfont.svg#ColaborateRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ColaborateMediumRegular';
+    src: font-url('ColabMed-webfont.eot');
+    src: font-url('ColabMed-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('ColabMed-webfont.woff') format('woff'),
+         font-url('ColabMed-webfont.ttf') format('truetype'),
+         font-url('ColabMed-webfont.svg#ColaborateMediumRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ColaborateBoldRegular';
+    src: font-url('ColabBol-webfont.eot');
+    src: font-url('ColabBol-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('ColabBol-webfont.woff') format('woff'),
+         font-url('ColabBol-webfont.ttf') format('truetype'),
+         font-url('ColabBol-webfont.svg#ColaborateBoldRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* REFACTOR! */
+body p, body h1, body h2, body ul, body table {
+  font-family: 'ColaborateLightRegular', Times, sans-serif;
+}
+
+body p {
+  font-size: 20px;
+}
+
+body h1 {
+  font-size: 30px;
+}
+
+body ul {
+  font-size: 20px;
+}
+
+.title {
+  color: $darkblue;
+  padding: 20px 0px 10px 0px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.text {
+  padding: 15px;
+  margin: 0 auto;
+  width: 960px;
+  height: 1200px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  opacity: 0.8;
+  background: white;
+  padding-top: 100px;
+  margin-top: 100px;
+  float: relative;
+
+}
+
+body {
+  /* IE10 Consumer Preview */
+  background-image: -ms-radial-gradient(center top, circle farthest-corner, #FFFFFF 0%, #CFDBE8 100%);
+
+  /* Mozilla Firefox */
+  background-image: -moz-radial-gradient(center top, circle farthest-corner, #FFFFFF 0%, #CFDBE8 100%);
+
+  /* Opera */
+  background-image: -o-radial-gradient(center top, circle farthest-corner, #FFFFFF 0%, #CFDBE8 100%);
+
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(radial, center top, 0, center top, 553, color-stop(0, #FFFFFF), color-stop(1, #CFDBE8));
+
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-radial-gradient(center top, circle farthest-corner, #FFFFFF 0%, #CFDBE8 100%);
+
+  /* W3C Markup, IE10 Release Preview */
+  background-image: radial-gradient(circle farthest-corner at center top, #FFFFFF 0%, #CFDBE8 100%);
+}
+

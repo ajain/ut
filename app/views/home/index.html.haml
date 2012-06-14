@@ -1,0 +1,31 @@
+= render partial: 'shared/toolbar'
+
+- @documents = Document.all
+
+.content
+  .title
+    %h1 Happy Monday
+  .documents-container.main
+    .tabs
+      %p Documents
+      %ul
+        %li Logo
+        %li All
+    .container-box.main
+      = render 'documents/widget'
+
+
+  .documents-container.sidebar
+    .tabs
+      %p Emails
+      %ul
+        %li Yours
+        %li Group
+    .container-box.sidebar
+
+  .search
+    = form_tag("/search", :method => "get") do
+      = label_tag(:q, "Search for:")
+      = text_field_tag(:q)
+      = submit_tag("Search")
+

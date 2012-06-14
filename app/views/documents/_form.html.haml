@@ -1,0 +1,37 @@
+= form_for @document do |f|
+  -if @document.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@document.errors.count, "error")} prohibited this document from being saved:"
+      %ul
+        - @document.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :filename
+    = f.text_field :filename
+  .field
+    = f.label :documenttype
+    = f.text_field :documenttype
+  .field
+    = f.label :firm
+    = f.text_field :firm
+  .field
+    = f.label :fund
+    = f.text_field :fund
+  .field
+    = f.label :month
+    = f.text_field :month
+  .field
+    = f.label :year
+    = f.number_field :year
+  .field
+    = f.label :group
+    = f.text_field :group
+  .field
+    = f.label :investmentcat
+    = f.text_field :investmentcat
+  .field
+    = f.label :url
+    = f.text_field :url
+  .actions
+    = f.submit 'Save'

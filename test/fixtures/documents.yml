@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  filename: MyString
+  type: 
+  firm: MyString
+  fund: MyString
+  month: MyString
+  year: 1
+  group: MyString
+  investmentcat: MyString
+  url: MyString
+
+two:
+  filename: MyString
+  type: 
+  firm: MyString
+  fund: MyString
+  month: MyString
+  year: 1
+  group: MyString
+  investmentcat: MyString
+  url: MyString
