@@ -110,9 +110,17 @@ body ul {
   padding-top: 100px;
   margin-top: 100px;
   float: relative;
-
 }
 
+table th {
+  width: 100px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+
+table td {
+  border: 1px solid black;
+}
 body {
   /* IE10 Consumer Preview */
   background-image: -ms-radial-gradient(center top, circle farthest-corner, #FFFFFF 0%, #CFDBE8 100%);

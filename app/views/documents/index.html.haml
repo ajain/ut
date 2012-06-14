@@ -1,5 +1,9 @@
 %h1 Listing documents
 
+= search_form_for @q do |f|
+  = f.text_field :fund_cont
+  = f.submit
+
 %table
   %tr
     %th Filename
