@@ -1,0 +1,23 @@
+$darkblue: #1C75BC;
+
+input[type=text] {
+  width: 150px;
+  height: 20px;
+  padding: 2px;
+  border-radius: 8px;
+  margin: 5px 5px 25px 5px;
+  background: white;
+  border: 1px solid black;
+}
+
+input[type=submit] {
+  height: 30px;
+  width: 60px;
+  background-color: $darkblue;
+  color: white;
+  font-size: 14px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  box-shadow: none;
+}

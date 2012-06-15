@@ -1,5 +1,5 @@
 Sop::Application.routes.draw do
-
+  match '/documents/widget', :controller => 'documents', :action => 'widget'
   resources :documents
 
   # The priority is based upon order of creation:

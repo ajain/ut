@@ -1,6 +1,16 @@
+
+- @documents = Document.all
+- @q = Document.search(params[:q])
+
 .toolbar
   .toolbar-box
     .logo
-      %h1 COMPANY
+      %h1 UTIMCO
     .search
-      %p Search
+      .search-box
+        = search_form_for @q do |f|
+          = f.text_field :fund_cont
+          = f.submit
+      .search-help
+        %p This is to help you
+

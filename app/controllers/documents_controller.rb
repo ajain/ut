@@ -1,17 +1,21 @@
 class DocumentsController < ApplicationController
   # GET /documents
   # GET /documents.json
-  # def index
-    # @documents = Document.all
+
 def index
   @q = Document.search(params[:q])
   @documents = @q.result(:distinct => true)
+  # redirect_to root_path
 end
-  #   respond_to do |format|
-  #     format.html # index.html.erb
-  #     format.json { render json: @documents }
-  #   end
-  # end
+
+# def index
+#     @documents = Document.all
+
+#     respond_to do |format|
+#       format.html # index.html.erb
+#       format.json { render json: @documents }
+#     end
+#   end
 
   # GET /documents/1
   # GET /documents/1.json

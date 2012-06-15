@@ -113,12 +113,13 @@ body ul {
 }
 
 table th {
-  width: 100px;
   font-weight: bold;
   border: 1px solid black;
+  background: grey;
 }
 
 table td {
+  padding: 3px;
   border: 1px solid black;
 }
 body {
