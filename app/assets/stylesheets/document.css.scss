@@ -11,13 +11,18 @@ input[type=text] {
 }
 
 input[type=submit] {
-  height: 30px;
+  height: 24px;
   width: 60px;
-  background-color: $darkblue;
+  background: $darkblue;
   color: white;
   font-size: 14px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  box-shadow: none;
+  border: 0px;
+}
+
+input[type=submit]:hover {
+  background: green;
+
 }

@@ -10,7 +10,36 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
-//= require jquery_ujs
+
+
 //= require_tree .
 
+// = require jquery_ujs
+//= require jquery
+
+  // $("p").hover(addClass('test'));
+$(function() {
+  $("#documents_search").submit(function() {
+  $.get(this.action, $(this).serialize(), null, "script");
+  return false;
+  });
+
+});
+
+
+// $(document).ready(function() {
+//   $("p").click(function(){
+//       $(this).hide();
+//   });
+// });
+
+// $(document).ready(function() {
+//   $('p').hover(
+//       function(){
+//            $(this).css({color:'red'}); //mouseover
+//       },
+//       function(){
+//            $(this).css({color:'black'}); // mouseout
+//       }
+//   );
+// });

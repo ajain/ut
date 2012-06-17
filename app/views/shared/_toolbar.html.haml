@@ -1,6 +1,5 @@
-
-- @documents = Document.all
-- @q = Document.search(params[:q])
+- @search = Document.search
+- @documents = @search.results
 
 .toolbar
   .toolbar-box
@@ -8,9 +7,8 @@
       %h1 UTIMCO
     .search
       .search-box
-        = search_form_for @q do |f|
-          = f.text_field :fund_cont
-          = f.submit
+        = render template: 'documents/index'
       .search-help
-        %p This is to help you
+
+
 

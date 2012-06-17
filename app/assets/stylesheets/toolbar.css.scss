@@ -20,7 +20,7 @@
   color: black;
   position: absolute;
   right: 0px;
-  width: 300px;
+  width: 450px;
   height: 45px;
   opacity: 0.9;
   background: white;
@@ -30,12 +30,18 @@
   border: 1px solid black;
   padding: 5px;
   overflow: hidden;
-  -webkit-transition: height .3s ease-in-out;
-  -moz-transition: height .3s ease-in-out;
-  -o-transition: height .3s ease-in-out;
-  transition: height .3s ease-in-out;
+  // -webkit-transition: height .3s ease-in-out, width .3s ease-in-out;
+  // -moz-transition: height .3s ease-in-out, width .3s ease-in-out;
+  // -o-transition: height .3s ease-in-out, width .3s ease-in-out;
+  // transition: height .3s ease-in-out, width .3s ease-in-out;
+  z-index: 3;
 }
 
 .search:hover, .search:focus {
-  height: 300px;
+  height: auto;
+  width: 450px;
+}
+
+.search-box {
+  float: right;
 }
