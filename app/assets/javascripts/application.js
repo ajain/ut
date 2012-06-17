@@ -18,28 +18,24 @@
 //= require jquery
 
   // $("p").hover(addClass('test'));
-$(function() {
-  $("#documents_search").submit(function() {
-  $.get(this.action, $(this).serialize(), null, "script");
-  return false;
-  });
+// $(function() {
+//   $("#documents_search").submit(function() {
+//   $.get(this.action, $(this).serialize(), null, "script");
+//   return false;
+//   });
 
-});
+// });
 
-
-// $(document).ready(function() {
-//   $("p").click(function(){
-//       $(this).hide();
+// $(function() {
+//   $("#documents_search input").keyup(function() {
+//   $.get($("documents_search").attr("action"), $('#documents_search").serialize(), null, "script");
+//   return false;
 //   });
 // });
 
-// $(document).ready(function() {
-//   $('p').hover(
-//       function(){
-//            $(this).css({color:'red'}); //mouseover
-//       },
-//       function(){
-//            $(this).css({color:'black'}); // mouseout
-//       }
-//   );
-// });
+$(function() {
+  $("#documents_search input").keyup(function() {
+    $.get($("#documents_search").attr("action"), $("#documents_search").serialize(), null, "script");
+    return false;
+  });
+});

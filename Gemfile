@@ -23,9 +23,8 @@ end
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'haml'
-gem 'sunspot_rails'
-gem 'sunspot_solr'
 gem 'progress_bar'
+gem 'tire'
 # gem 'ransack'
 
 # To use ActiveModel has_secure_password
