@@ -1,13 +1,17 @@
 $darkblue: #1C75BC;
+$lightgrey: #F1F2F2;
+$lightblue: #CFDBE8;
 
 input[type=text] {
-  width: 150px;
-  height: 20px;
-  padding: 2px;
+  font-size: 14px;
+  width: 375px;
+  height: 24px;
+  padding: 0 0 0 5px;
   border-radius: 8px;
-  margin: 5px 5px 25px 5px;
+  margin: 8px 10px 25px 10px;
   background: white;
   border: 1px solid black;
+  float: right;
 }
 
 input[type=submit] {
@@ -16,13 +20,55 @@ input[type=submit] {
   background: $darkblue;
   color: white;
   font-size: 14px;
+  margin: 8px 8px 0 0;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
   border: 0px;
+  float: right;
 }
 
 input[type=submit]:hover {
   background: green;
+}
+
+#documents {
+  width: 100%;
+  padding: 0 5px 5px 5px;
+  // background: $lightblue;
+}
+tr td:first-child {
+  min-width: 280px;
 
 }
+tr td {
+  padding: 6px 5px 6px 5px;
+  min-width: 50px;
+}
+
+.search-form {
+  display: block;
+  width: 100%;
+}
+
+.green {
+  background: #1C75BC;
+  width: 100%;
+  height: 45px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.green:hover {
+  background: #8DC63F;
+}
+
+// .green:hover input[type=text] {
+//   width: 360px;
+// }
+
+// input[type=text]:hover {
+//   width: 360px;
+// }

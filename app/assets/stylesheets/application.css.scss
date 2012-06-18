@@ -87,6 +87,14 @@ body ul {
   font-size: 20px;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+a:link:hover {
+  font-weight: bold;
+}
+
 .title {
   color: $darkblue;
   padding: 20px 0px 10px 0px;
@@ -112,16 +120,6 @@ body ul {
   float: relative;
 }
 
-table th {
-  font-weight: bold;
-  border: 1px solid black;
-  background: grey;
-}
-
-table td {
-  padding: 3px;
-  border: 1px solid black;
-}
 body {
   /* IE10 Consumer Preview */
   background-image: -ms-radial-gradient(center top, circle farthest-corner, #FFFFFF 0%, #CFDBE8 100%);

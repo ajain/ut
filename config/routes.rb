@@ -1,5 +1,6 @@
 Sop::Application.routes.draw do
   match 'documents/index', :controller => 'documents'
+  match 'documents/all', :controller => 'documents', :action => 'all'
   resources :documents
 
   match "/documents/index.js", :controller => 'documents', :action => 'index', :format => :js

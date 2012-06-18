@@ -17,25 +17,14 @@
 // = require jquery_ujs
 //= require jquery
 
-  // $("p").hover(addClass('test'));
-// $(function() {
-//   $("#documents_search").submit(function() {
-//   $.get(this.action, $(this).serialize(), null, "script");
-//   return false;
-//   });
-
-// });
-
-// $(function() {
-//   $("#documents_search input").keyup(function() {
-//   $.get($("documents_search").attr("action"), $('#documents_search").serialize(), null, "script");
-//   return false;
-//   });
-// });
-
 $(function() {
   $("#documents_search input").keyup(function() {
     $.get($("#documents_search").attr("action"), $("#documents_search").serialize(), null, "script");
+    return false;
+  });
+
+  $("#documents_search").submit(function() {
+    $.get(this.action, $(this).serialize(), null, "script");
     return false;
   });
 });

@@ -20,28 +20,17 @@
   color: black;
   position: absolute;
   right: 0px;
-  width: 450px;
-  height: 45px;
-  opacity: 0.9;
+  width: 400px;
+  height: auto;
+  // opacity: 1;
   background: white;
   -webkit-border-radius: 0 0 12px 12px;
   -moz-border-radius: 0 0 12px 12px;
   border-radius: 0 0 12px 12px;
   border: 1px solid black;
-  padding: 5px;
-  overflow: hidden;
-  // -webkit-transition: height .3s ease-in-out, width .3s ease-in-out;
-  // -moz-transition: height .3s ease-in-out, width .3s ease-in-out;
-  // -o-transition: height .3s ease-in-out, width .3s ease-in-out;
-  // transition: height .3s ease-in-out, width .3s ease-in-out;
+  -webkit-transition: height .3s linear;
+  -moz-transition: height .3s linear;
+  -o-transition: height .3s linear;
+  transition: height .3s linear;
   z-index: 3;
-}
-
-.search:hover, .search:focus {
-  height: auto;
-  width: 450px;
-}
-
-.search-box {
-  float: right;
 }
