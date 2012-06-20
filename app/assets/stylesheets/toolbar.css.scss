@@ -5,6 +5,13 @@
   color: white;
 }
 
+.toolbar h1 {
+  background-image: url('utimco-logo-small.png');
+  background-repeat: no-repeat;
+  padding: 3px 0 0 45px;
+  height: 46px;
+}
+
 .toolbar-box {
   position: relative;
   width: 960px;
@@ -12,8 +19,8 @@
 }
 
 .logo {
-  padding: 8px 0px 8px 0px;
   float: left;
+  padding: 4px 0 0 0;
 }
 
 .search {

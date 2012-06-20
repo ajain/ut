@@ -6,7 +6,8 @@ class Document < ActiveRecord::Base
 
   def self.search(params)
     tire.search(load: true) do
-      query { string params[:query] } if params[:query].present?
+      query { string params[:query], default_operator: "AND"} if params[:query].present?
+
     end
   end
 end
