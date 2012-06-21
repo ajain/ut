@@ -3,23 +3,39 @@
 .content
   .title
     %h1 Happy Monday
-  .documents-container.main
-    .tabs
-      %p Documents
-      %ul
-        %li Logo
-        %li All
-    .container-box.main
+  .main
+    .documents-container.mainwidth
+      .tabs
+        %p Documents
+        %ul
+          %li Recent
+          %li All
+      .container-box.mainwidth
 
-  .documents-container.sidebar
-    .tabs
-      %p Emails
-      %ul
-        %li Yours
-        %li Group
-    .container-box.sidebar
+    .documents-container.mainwidth
+      .tabs
+        %p Notes
+        %ul
+          %li Recent
+          %li All
+      .container-box.mainwidth
+  .sidebar
+    .documents-container.sidebarwidth
+      .tabs
+        %p Favorites
+        %ul
+          %li Yours
+          %li Group
+      .container-box.sidebarwidth
+    .documents-container.sidebarwidth
+      .tabs
+        %p Emails
+        %ul
+          %li Yours
+          %li Group
+      .container-box.sidebarwidth
 
-
+//launch elastic search with: elasticsearch -f -D es.config=/usr/local/Cellar/elasticsearch/0.18.7/config/elasticsearch.ym
 
 
 

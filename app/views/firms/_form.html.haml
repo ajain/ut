@@ -1,0 +1,37 @@
+= form_for @firm do |f|
+  -if @firm.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@firm.errors.count, "error")} prohibited this firm from being saved:"
+      %ul
+        - @firm.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :firm_name
+    = f.text_field :firm_name
+  .field
+    = f.label :short_name
+    = f.text_field :short_name
+  .field
+    = f.label :firm_type
+    = f.text_field :firm_type
+  .field
+    = f.label :phone
+    = f.number_field :phone
+  .field
+    = f.label :fax
+    = f.number_field :fax
+  .field
+    = f.label :emergency_phone
+    = f.text_field :emergency_phone
+  .field
+    = f.label :website
+    = f.text_field :website
+  .field
+    = f.label :status
+    = f.text_field :status
+  .field
+    = f.label :document_id
+    = f.collection_select(:document_id, Document.all, :id, :filename)
+  .actions
+    = f.submit 'Save'

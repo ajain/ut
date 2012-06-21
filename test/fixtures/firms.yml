@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  firm_name: MyString
+  short_name: MyString
+  firm_type: MyString
+  phone: 1
+  fax: 1
+  emergency_phone: MyString
+  website: MyString
+  status: MyString
+  document: 
+
+two:
+  firm_name: MyString
+  short_name: MyString
+  firm_type: MyString
+  phone: 1
+  fax: 1
+  emergency_phone: MyString
+  website: MyString
+  status: MyString
+  document: 

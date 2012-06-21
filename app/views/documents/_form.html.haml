@@ -1,3 +1,5 @@
+- @firms = Firm.all
+
 = form_for @document do |f|
   -if @document.errors.any?
     #error_explanation
@@ -13,8 +15,8 @@
     = f.label :documenttype
     = f.text_field :documenttype
   .field
-    = f.label :firm
-    = f.text_field :firm
+    = f.label :firm_id
+    = f.collection_select(:firm_id, Firm.all, :id, :firm_name)
   .field
     = f.label :fund
     = f.text_field :fund
@@ -33,5 +35,6 @@
   .field
     = f.label :url
     = f.text_field :url
+
   .actions
     = f.submit 'Save'

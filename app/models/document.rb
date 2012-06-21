@@ -1,5 +1,6 @@
 class Document < ActiveRecord::Base
-  attr_accessible :filename, :documenttype, :firm, :fund, :group, :investmentcat, :month, :url, :year
+  attr_accessible :filename, :documenttype, :firm, :fund, :group, :investmentcat, :month, :url, :year, :firm_id
+  has_and_belongs_to_many :firms
 
   include Tire::Model::Search
   include Tire::Model::Callbacks

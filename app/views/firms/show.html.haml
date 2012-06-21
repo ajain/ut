@@ -1,0 +1,33 @@
+%p#notice= notice
+
+%p
+  %b Firm name:
+  = @firm.firm_name
+%p
+  %b Short name:
+  = @firm.short_name
+%p
+  %b Firm type:
+  = @firm.firm_type
+%p
+  %b Phone:
+  = @firm.phone
+%p
+  %b Fax:
+  = @firm.fax
+%p
+  %b Emergency phone:
+  = @firm.emergency_phone
+%p
+  %b Website:
+  = @firm.website
+%p
+  %b Status:
+  = @firm.status
+%p
+  %b Document:
+  = @firm.document_id
+
+= link_to 'Edit', edit_firm_path(@firm)
+\|
+= link_to 'Back', firms_path

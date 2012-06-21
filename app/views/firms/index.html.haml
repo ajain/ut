@@ -1,0 +1,35 @@
+%h1 Listing firms
+
+%table
+  %tr
+    %th Firm name
+    %th Short name
+    %th Firm type
+    %th Phone
+    %th Fax
+    %th Emergency phone
+    %th Website
+    %th Status
+    %th Document
+    %th
+    %th
+    %th
+
+  - @firms.each do |firm|
+    %tr
+      %td= firm.firm_name
+      %td= firm.short_name
+      %td= firm.firm_type
+      %td= firm.phone
+      %td= firm.fax
+      %td= firm.emergency_phone
+      %td= firm.website
+      %td= firm.status
+      %td= firm.document_id
+      %td= link_to 'Show', firm
+      %td= link_to 'Edit', edit_firm_path(firm)
+      %td= link_to 'Destroy', firm, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Firm', new_firm_path
