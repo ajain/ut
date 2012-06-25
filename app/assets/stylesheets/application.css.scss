@@ -14,6 +14,7 @@
 
 $darkblue: #1C75BC;
 $lightgrey: #F1F2F2;
+$mediumgrey: #D1D3D4;
 
 @font-face {
     font-family: 'ColaborateThinRegular';
@@ -88,11 +89,12 @@ body ul {
 }
 
 a:link {
+  color: $darkblue;
   text-decoration: none;
 }
 
 a:link:hover {
-  font-weight: bold;
+  background-color: #CFDBE8;
 }
 
 .title {
@@ -119,6 +121,20 @@ a:link:hover {
   margin-top: 100px;
   float: relative;
 }
+
+.widget {
+  display: block;
+}
+
+.widget .row {
+  padding: 7px;
+  border-bottom: 1px solid $mediumgrey;
+}
+
+.info p {
+  font-size: 16px;
+}
+
 
 body {
   /* IE10 Consumer Preview */

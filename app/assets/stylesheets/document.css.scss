@@ -1,6 +1,7 @@
 $darkblue: #1C75BC;
 $lightgrey: #F1F2F2;
 $lightblue: #CFDBE8;
+$limegreen: #8DC63F;
 
 input[type=text] {
   font-size: 14px;
@@ -62,7 +63,7 @@ tr td {
 }
 
 .green:hover {
-  background: #8DC63F;
+  background: $limegreen;
 }
 
 // .green:hover input[type=text] {

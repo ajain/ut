@@ -35,7 +35,7 @@ $mediumgrey: #D1D3D4;
 
 .tabs p {
   float: left;
-  padding: 5px 10px 0 0;
+  padding: 5px 10px 7px 0;
 }
 .tabs ul li {
   position: relative; //necessary for z-index to work
@@ -62,7 +62,6 @@ $mediumgrey: #D1D3D4;
 
 .container-box {
   float: left;
-  padding: 5px;
   top: -1px;
   position: relative;
   background: white;
@@ -74,7 +73,7 @@ $mediumgrey: #D1D3D4;
 
 .sidebarwidth {
   width: 310px;
-  margin: 0 0 30px 0;
+  margin: 0 0 10px 0;
 }
 
 .mainwidth {

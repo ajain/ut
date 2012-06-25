@@ -1,14 +1,14 @@
 class DocumentsController < ApplicationController
 
-  # def filetype
-  #   url = Document.find(params[:id]).url.chomp
-  #   icon = url[-3..-1]
+  def widget
+    @documents = Document.all
 
-  #   if icon = "pdf"
-  #     puts 1
-  #   else
-  #     puts 2
-  # end
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @documents }
+    end
+  end
+
   def all
     @documents = Document.all
 

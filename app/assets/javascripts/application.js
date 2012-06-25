@@ -10,13 +10,9 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-
-
-//= require_tree .
-
-// = require jquery_ujs
 //= require jquery
-
+//= require jquery_ujs
+//= require_tree .
 $(function() {
   $("#documents_search input").keyup(function() {
     $.get($("#documents_search").attr("action"), $("#documents_search").serialize(), null, "script");

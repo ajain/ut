@@ -1,0 +1,7 @@
+.widget
+  - @firms.each do |firm|
+    .row
+      .firm-name
+        %p= link_to firm.firm_name, firm
+      .info
+        %p p: #{number_to_phone(firm.phone)}

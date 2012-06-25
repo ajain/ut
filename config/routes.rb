@@ -1,21 +1,17 @@
 Sop::Application.routes.draw do
-
-  match 'firms/widget', :controller => 'firms', :action => 'widget'
   resources :firms do
     resources :documents
   end
 
+
   match 'documents/index', :controller => 'documents'
-
-
-
   match 'documents/all', :controller => 'documents', :action => 'all'
 
   resources :documents do
     resources :firms
   end
 
-  match "/documents/index.js", :controller => 'documents', :action => 'index', :format => :js
+  # match "/documents/index.js", :controller => 'documents', :action => 'index', :format => :js
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
