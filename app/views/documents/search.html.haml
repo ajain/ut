@@ -1,0 +1,11 @@
+.search-form
+  .green
+    = form_tag({:controller => "documents", :action => "search"}, method: :get, id: "documents_search") do
+      = text_field_tag :query, params[:query], :placeholder => 'Enter Search...'
+
+#documents
+  = render partial: 'documents/documents'
+
+/ %br
+
+/ = link_to 'New Document', new_document_path

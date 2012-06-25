@@ -18,14 +18,14 @@ class DocumentsController < ApplicationController
     end
   end
 
-  def index
+  def search
     @documents = []
 
     unless params[:query].nil? || params[:query].strip.empty?
       @documents = Document.search(params)
     end
     @documents
-    # AJ - including respond_to block breaks sunspot search
+    # AJ - including respond_to block breaks search
   end
 
   # GET /documents/1
