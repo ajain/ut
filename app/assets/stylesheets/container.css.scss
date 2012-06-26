@@ -68,7 +68,8 @@ $mediumgrey: #D1D3D4;
   border: 1px $mediumgrey;
   border-style: solid;
   border-color: 1px #D1D3D4;
-  height: 300px;
+  min-height: 30px;
+  height: 100%;
 }
 
 .sidebarwidth {

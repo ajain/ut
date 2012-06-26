@@ -31,7 +31,7 @@
     = f.label :status
     = f.text_field :status
   .field
-    = f.label :document_id
-    = f.collection_select(:document_id, Document.all, :id, :filename)
+    = f.label :document_ids
+    = f.collection_select(:document_ids, Document.all, :id, :filename)
   .actions
     = f.submit 'Save'

@@ -16,7 +16,7 @@
     = f.text_field :documenttype
   .field
     = f.label :firm_id
-    = f.collection_select(:firm_id, Firm.all, :id, :firm_name)
+    = f.collection_select(:firm_ids, Firm.all, :id, :firm_name)
   .field
     = f.label :fund
     = f.text_field :fund

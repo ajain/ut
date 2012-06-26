@@ -1,9 +1,9 @@
-- @documents = []
+- @search_results = []
 
 .toolbar
   .toolbar-box
     .logo
-      %h1 UTIMCO
+      %h1= link_to 'UTIMCO', :root
     .search
       .search-box
         = render template: 'documents/search'

@@ -1,5 +1,5 @@
 %table
-  - @documents.each do |document|
+  - @search_results.each do |document|
     %tr
       %td= link_to (document.filename), document
       %td= link_to 'Open', document

@@ -1,6 +1,8 @@
 // Place all the styles related to the Firms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$darkgrey: #808285;
+
 .field input[type="text"] {
 margin: 0;
 padding: 0;
@@ -15,4 +17,17 @@ position: relative;
 
 .actions {
   float: left;
+}
+
+.detail {
+  padding: 5px;
+}
+
+.detail p b {
+  font-size: 14px;
+  width: 85px;
+  display: block;
+  float: left;
+  padding: 3px 0 0 0;
+  // color: $darkgrey;
 }

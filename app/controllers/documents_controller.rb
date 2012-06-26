@@ -9,7 +9,7 @@ class DocumentsController < ApplicationController
     end
   end
 
-  def all
+  def index
     @documents = Document.all
 
     respond_to do |format|
@@ -19,12 +19,12 @@ class DocumentsController < ApplicationController
   end
 
   def search
-    @documents = []
+    @search_results = []
 
     unless params[:query].nil? || params[:query].strip.empty?
-      @documents = Document.search(params)
+      @search_results = Document.search(params)
     end
-    @documents
+    @search_results
     # AJ - including respond_to block breaks search
   end
 

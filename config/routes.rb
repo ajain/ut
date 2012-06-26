@@ -5,7 +5,7 @@ Sop::Application.routes.draw do
 
   match 'documents/search', :controller => 'documents', :action => 'search'
   # match 'documents/index', :controller => 'documents'
-  match 'documents/all', :controller => 'documents', :action => 'all'
+  # match 'documents/all', :controller => 'documents', :action => 'all'
 
   resources :documents do
     resources :firms

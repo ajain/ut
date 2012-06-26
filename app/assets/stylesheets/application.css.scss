@@ -94,7 +94,11 @@ a:link {
 }
 
 a:link:hover {
-  background-color: #CFDBE8;
+  background-color: #FFF7AE;
+}
+
+h1 a:link {
+  color: white;
 }
 
 .title {

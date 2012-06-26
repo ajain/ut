@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120621180829) do
+ActiveRecord::Schema.define(:version => 20120625221016) do
 
   create_table "documents", :force => true do |t|
     t.string   "filename"
@@ -24,7 +24,6 @@ ActiveRecord::Schema.define(:version => 20120621180829) do
     t.string   "url"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
-    t.integer  "firm_id"
   end
 
   create_table "documents_firms", :id => false, :force => true do |t|
@@ -43,11 +42,8 @@ ActiveRecord::Schema.define(:version => 20120621180829) do
     t.integer  "emergency_phone", :limit => 255
     t.string   "website"
     t.string   "status"
-    t.integer  "document_id"
     t.datetime "created_at",                     :null => false
     t.datetime "updated_at",                     :null => false
   end
-
-  add_index "firms", ["document_id"], :name => "index_firms_on_document_id"
 
 end
