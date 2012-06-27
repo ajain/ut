@@ -1,4 +1,6 @@
 - @documents = Firm.find(params[:id]).documents
+- @notes = Firm.find(params[:id]).notes
+
 = render partial: 'shared/toolbar'
 
 .content
@@ -21,7 +23,11 @@
         %ul
           %li Recent
           %li All
+      .buttons.new
+        %b= link_to 'new note', new_note_path
       .container-box.mainwidth
+        .widget
+          = render partial: 'notes/widget'
   .sidebar
     .documents-container.sidebarwidth
       .tabs
@@ -33,29 +39,10 @@
     .documents-container.sidebarwidth
       .tabs
         %p Account Detail
+      .buttons.edit
+        %b= link_to 'edit', edit_firm_path(@firm)
       .container-box.sidebarwidth
-        .detail
-          %p
-            %b Short Name:
-            = @firm.short_name
-          %p
-            %b Firm Type:
-            = @firm.firm_type
-          %p
-            %b Phone:
-            = number_to_phone(@firm.phone)
-          %p
-            %b Fax:
-            = number_to_phone(@firm.fax)
-          %p
-            %b Emergency:
-            = number_to_phone(@firm.emergency_phone)
-          %p
-            %b Website:
-            = @firm.website
-          %p
-            %b Status:
-            = @firm.status
+        = render partial: 'firms/detail'
 
     / %p#notice= notice
 

@@ -1,5 +1,6 @@
 - @documents = Document.all
 - @firms = Firm.all
+- @notes = Note.all
 
 = render partial: 'shared/toolbar'
 
@@ -13,6 +14,8 @@
         %ul
           %li Recent
           %li All
+        .buttons.view-all
+          %b= link_to 'view all', documents_path
       .container-box.mainwidth
         = render partial: 'documents/widget'
 
@@ -22,7 +25,10 @@
         %ul
           %li Recent
           %li All
+        .buttons.view-all
+          %b= link_to 'view all', notes_path
       .container-box.mainwidth
+        = render partial: 'notes/widget'
   .sidebar
     .documents-container.sidebarwidth
       .tabs

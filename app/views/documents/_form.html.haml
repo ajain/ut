@@ -28,7 +28,7 @@
     = f.number_field :year
   .field
     = f.label :group
-    = f.text_field :group
+    = f.select :group, ['lcc', 'mcc', 'privates']
   .field
     = f.label :investmentcat
     = f.text_field :investmentcat

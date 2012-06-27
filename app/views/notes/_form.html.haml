@@ -1,0 +1,43 @@
+= form_for @note do |f|
+  -if @note.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@note.errors.count, "error")} prohibited this note from being saved:"
+      %ul
+        - @note.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :summary
+    = f.text_field :summary
+  .field
+    = f.label :content
+    = f.text_area :content
+  .field
+    = f.label :format
+    = f.text_field :format
+  .field
+    = f.label :meeting_type
+    = f.text_field :meeting_type
+  .field
+    = f.label :meeting_time
+    = f.datetime_select :meeting_time
+  .field
+    = f.label :street
+    = f.text_field :street
+  .field
+    = f.label :city
+    = f.text_field :city
+  .field
+    = f.label :state
+    = f.text_field :state
+  .field
+    = f.label :zip
+    = f.number_field :zip
+  .field
+    = f.label :firm_id
+    = f.collection_select(:firm_ids, Firm.all, :id, :firm_name)
+  .actions
+    = f.submit 'Save'

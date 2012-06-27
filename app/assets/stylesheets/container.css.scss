@@ -60,6 +60,32 @@ $mediumgrey: #D1D3D4;
   opacity: 1;
 }
 
+.buttons {
+  float: right;
+  padding: 7px 0 0 0;
+}
+
+.new {
+  background-image: url('buttons/new.png');
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+.edit {
+  background-image: url('buttons/edit.png');
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.view-all {
+  background-image: url('buttons/folder.png');
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.buttons b {
+  padding: 0 0 0 30px;
+
+}
 .container-box {
   float: left;
   top: -1px;

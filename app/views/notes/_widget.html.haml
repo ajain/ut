@@ -1,0 +1,9 @@
+.widget.note
+  - @notes.each do |note|
+    .row
+      .note-name
+        %p= link_to note.title, note
+      .info
+        %p= note.summary
+      .commentary.fourteen
+        %b= note.content

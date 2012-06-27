@@ -23,6 +23,11 @@ position: relative;
   padding: 5px;
 }
 
+.detail p {
+  display: block;
+  float: left;
+}
+
 .detail p b {
   font-size: 14px;
   width: 85px;
@@ -30,4 +35,17 @@ position: relative;
   float: left;
   padding: 3px 0 0 0;
   // color: $darkgrey;
+}
+
+.widget.note .row {
+  height: 34px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+}
+
+.widget.note .row:hover {
+  height: 140px;
 }

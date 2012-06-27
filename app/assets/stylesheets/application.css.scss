@@ -72,7 +72,7 @@ $mediumgrey: #D1D3D4;
 }
 
 /* REFACTOR! */
-body p, body h1, body h2, body ul, body table {
+body p, body h1, body h2, body ul, body table, body b {
   font-family: 'ColaborateLightRegular', Times, sans-serif;
 }
 
@@ -94,7 +94,8 @@ a:link {
 }
 
 a:link:hover {
-  background-color: #FFF7AE;
+  // background-color: #FFF7AE;
+  color: #00AEEF;
 }
 
 h1 a:link {
@@ -137,8 +138,12 @@ h1 a:link {
 
 .info p {
   font-size: 16px;
+  padding-top: 3px;
 }
 
+.fourteen {
+  font-size: 14px;
+}
 
 body {
   /* IE10 Consumer Preview */
@@ -158,5 +163,6 @@ body {
 
   /* W3C Markup, IE10 Release Preview */
   background-image: radial-gradient(circle farthest-corner at center top, #FFFFFF 0%, #CFDBE8 100%);
-}
+  height: 1000px;
+  }
 

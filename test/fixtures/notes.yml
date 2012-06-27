@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  summary: MyString
+  content: MyText
+  format: MyString
+  type: 
+  meeting_time: 2012-06-26 18:03:56
+  street: MyString
+  city: MyString
+  state: MyString
+  zip: 1
+
+two:
+  title: MyString
+  summary: MyString
+  content: MyText
+  format: MyString
+  type: 
+  meeting_time: 2012-06-26 18:03:56
+  street: MyString
+  city: MyString
+  state: MyString
+  zip: 1

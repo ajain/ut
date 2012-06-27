@@ -1,0 +1,38 @@
+%h1 Listing notes
+
+%table
+  %tr
+    %th Title
+    %th Summary
+    %th Content
+    %th Format
+    %th Meeting Type
+    %th Meeting time
+    %th Street
+    %th City
+    %th State
+    %th Zip
+    %th
+    %th
+    %th
+
+  - @notes.each do |note|
+    %tr
+      %td= note.title
+      %td= note.summary
+      %td= note.content
+      %td= note.format
+      %td= note.meeting_type
+      %td= note.meeting_time
+      %td= note.street
+      %td= note.city
+      %td= note.state
+      %td= note.zip
+      %td= note.firm_ids
+      %td= link_to 'Show', note
+      %td= link_to 'Edit', edit_note_path(note)
+      %td= link_to 'Destroy', note, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Note', new_note_path

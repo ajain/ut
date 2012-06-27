@@ -1,0 +1,39 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @note.title
+%p
+  %b Summary:
+  = @note.summary
+%p
+  %b Content:
+  = @note.content
+%p
+  %b Format:
+  = @note.format
+%p
+  %b Meeting Type:
+  = @note.meeting_type
+%p
+  %b Meeting time:
+  = @note.meeting_time
+%p
+  %b Street:
+  = @note.street
+%p
+  %b City:
+  = @note.city
+%p
+  %b State:
+  = @note.state
+%p
+  %b Zip:
+  = @note.zip
+%p
+  %b Firm:
+  = @note.firm_ids
+
+= link_to 'Edit', edit_note_path(@note)
+\|
+= link_to 'Back', notes_path

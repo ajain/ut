@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120625221016) do
+ActiveRecord::Schema.define(:version => 20120627040253) do
 
   create_table "documents", :force => true do |t|
     t.string   "filename"
@@ -44,6 +44,28 @@ ActiveRecord::Schema.define(:version => 20120625221016) do
     t.string   "status"
     t.datetime "created_at",                     :null => false
     t.datetime "updated_at",                     :null => false
+  end
+
+  create_table "firms_notes", :id => false, :force => true do |t|
+    t.integer "firm_id"
+    t.integer "note_id"
+  end
+
+  add_index "firms_notes", ["firm_id", "note_id"], :name => "index_firms_notes_on_firm_id_and_note_id"
+
+  create_table "notes", :force => true do |t|
+    t.string   "title"
+    t.string   "summary"
+    t.text     "content"
+    t.string   "format"
+    t.string   "meeting_type"
+    t.datetime "meeting_time"
+    t.string   "street"
+    t.string   "city"
+    t.string   "state"
+    t.integer  "zip"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
 end
