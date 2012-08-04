@@ -1,8 +1,6 @@
 - @documents = Firm.find(params[:id]).documents
 - @notes = Firm.find(params[:id]).notes
 
-= render partial: 'shared/toolbar'
-
 .content
   .title
     %h1= @firm.firm_name

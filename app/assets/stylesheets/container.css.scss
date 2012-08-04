@@ -16,17 +16,19 @@ $mediumgrey: #D1D3D4;
 
 .main {
   float: left;
-  width: 620px;
+  width: 780px;
   margin-right: 30px;
 }
 
 .sidebar {
   float: left;
-  width: 310px;
+  width: 390px;
 }
 
 .documents-container {
   float: left;
+  // max-height: 300px;
+  // overflow: scroll;
 }
 
 .title {
@@ -99,11 +101,11 @@ $mediumgrey: #D1D3D4;
 }
 
 .sidebarwidth {
-  width: 310px;
+  width: 390px;
   margin: 0 0 10px 0;
 }
 
 .mainwidth {
-  width: 620px;
+  width: 780px;
   margin: 0 30px 10px 0;
 }

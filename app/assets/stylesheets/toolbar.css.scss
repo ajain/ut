@@ -1,3 +1,7 @@
+$darkblue: #1C75BC;
+$limegreen: #8DC63F;
+$lightblue: #CFDBE8;
+
 .toolbar {
   width: 100%;
   height: 46px;
@@ -8,19 +12,21 @@
 .toolbar h1 {
   background-image: url('utimco-logo-small.png');
   background-repeat: no-repeat;
-  padding: 4px 0 0 45px;
-  height: 46px;
+  padding: 8px 0 0 45px;
+  height: 30px;
+  font-size: 22px;
 }
 
 .toolbar-box {
   position: relative;
-  width: 960px;
+  width: 1200px;
   margin: 0 auto;
 }
 
 .logo {
+  display: block;
   float: left;
-  padding: 4px 0 0 0;
+  padding: 4px 12px 0 0;
 }
 
 .search {
@@ -28,16 +34,180 @@
   position: absolute;
   right: 0px;
   width: 400px;
-  height: auto;
+  // height: auto;
   // opacity: 1;
   background: white;
-  -webkit-border-radius: 0 0 12px 12px;
-  -moz-border-radius: 0 0 12px 12px;
-  border-radius: 0 0 12px 12px;
+  -webkit-border-radius: 0 0 8px 8px;
+  -moz-border-radius: 0 0 8px 8px;
+  border-radius: 0 0 8px 8px;
   border: 1px solid black;
   -webkit-transition: height .3s linear;
   -moz-transition: height .3s linear;
   -o-transition: height .3s linear;
   transition: height .3s linear;
   z-index: 3;
+  // min-height: 4px;
+}
+
+.navigation {
+  width: 660px;
+  float: left;
+  padding: 14px 0 0 0;
+
+}
+
+.navigation ul li {
+  display: inline;
+  margin-left: 8px;
+  font-size: 16px;
+// on hover
+
+}
+
+.navigation ul li a {
+  background-position: 6px 4px;
+  background-repeat: no-repeat;
+  padding: 8px 8px 12px 42px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.active {
+  background-color: $darkblue;
+  border-radius: 6px 6px 0 0;
+  height: 46px;
+
+}
+
+.navigation ul li a:hover {
+  background-color: #00AEEF;
+  border-radius: 6px 6px 0 0;
+}
+
+.navigation ul li a:nth-child(1) {
+  background-image: url('buttons/user.png');
+}
+
+a#groups {
+  background-image: url('buttons/connections.png');
+}
+
+a#apps {
+  background-image: url('buttons/graph.png');
+}
+
+a#staff {
+  background-image: url('buttons/information.png');
+}
+
+a#favorites {
+  background-image: url('buttons/favorite.png');
+}
+
+a#settings {
+  background-image: url('buttons/settings.png');
+}
+
+.subtoolbar ul {
+  padding: 0 0 9px 0;
+  // position: absolute; //dd
+  // left:-9999px; //dd
+}
+
+
+
+// .subtoolbar ul li:hover {
+//   color: $lightblue;
+// }
+
+.subtoolbar {
+  width: 100%;
+  height: 36px;
+  background: $darkblue;
+  color: white;
+}
+
+#nav li {
+  float: left; //dd
+  position: relative; //dd
+}
+
+#nav li ul li {
+  padding: 6px 0 6px 0;
+  margin: 0;
+}
+
+.subtoolbar ul li {
+  border-radius: 6px;
+  display: inline;
+  margin: 6px 0 0 0;
+  padding: 4px 6px 4px 6px;
+  margin-left: 8px;
+  font-size: 16px;
+  float: none; //dd
+}
+
+.subtoolbar ul li:hover {
+  background-color: #00AEEF;
+  }
+
+// .subtoolbar ul li:nth-child(1) {
+//   background-color: #00AEEF;
+//   }
+
+.navigation li a:link {
+  color: white;
+}
+
+#nav li a {
+  color: white;
+}
+
+#tabs {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+#nav ul{
+  position:absolute;
+  left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+
+#nav li p {
+  font-size: 16px;
+}
+
+#nav li ul li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+  background: #00AEEF;
+}
+
+#nav li ul li {
+  // opacity: 0.9;
+  background: $darkblue;
+  border-radius: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+#nav li ul li a {
+  padding: 5px;
+  width: 200px;
+}
+
+#nav li ul {
+  padding: 10px 0 0 0;
+  z-index: 2;
+  }
+#nav li ul li:last-child {
+ border-radius: 0 0 8px 8px;
+}
+
+#nav ul a {
+  white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+
+#nav li:hover ul { /* Display the dropdown on hover */
+  left:0; /* Bring back on-screen when needed */
 }

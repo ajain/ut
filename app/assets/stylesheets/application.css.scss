@@ -72,7 +72,7 @@ $mediumgrey: #D1D3D4;
 }
 
 /* REFACTOR! */
-body p, body h1, body h2, body ul, body table, body b {
+body p, body h1, body h2, body ul, body table, body b, body ul {
   font-family: 'ColaborateLightRegular', Times, sans-serif;
 }
 
@@ -109,7 +109,7 @@ h1 a:link {
 
 .content {
   margin: 0 auto;
-  width: 960px;
+  width: 1200px;
 }
 
 .text {

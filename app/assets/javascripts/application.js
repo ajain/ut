@@ -24,3 +24,19 @@ $(function() {
     return false;
   });
 });
+
+jQuery(function($) {
+  function changeTab(e) {
+    e.preventDefault();
+    $("#tabs li a.active").removeClass("active");
+    $(this).addClass("active");
+    showSubNav($(this).attr("href"));
+  }
+    function showSubNav(activeDiv) {
+      $("#tabs div").hide();
+      $(activeDiv).show();
+  }
+  $("#tabs ul li a").click(changeTab);
+  $("#tabs ul li:eq(0) a").click();
+
+});

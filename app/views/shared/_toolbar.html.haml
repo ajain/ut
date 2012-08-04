@@ -4,6 +4,22 @@
   .toolbar-box
     .logo
       %h1= link_to 'UTIMCO', :root
+    .navigation
+      #tabs
+        %ul
+          %li
+            %a{:href => "#utracs-tab", :id => "#utracs"}UTRaCs
+          %li
+            %a{:href => "#groups-tab", :id => "groups"}Groups
+          %li
+            %a{:href => "#apps-tab", :id => "apps"}Apps
+          %li
+            %a{:href => "#staff-tab", :id => "staff"}Staff
+          %li
+            %a{:href => "#favorites-tab", :id => "favorites"}Favorites
+          %li
+            %a{:href => "#settings-tab", :id => "settings"}Settings
+
     .search
       .search-box
         = render template: 'documents/search'
