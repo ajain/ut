@@ -1,35 +1,76 @@
-%h1 Listing firms
+.content
+  .title
+    %h1 Firms
+  .main
+    .documents-container.mainwidth
+      .tabs
+        %p Firms
+        %ul
+          %li Recent
+          %li All
+        .buttons.view-all
+          %b= link_to 'view all', firms_path
+      .container-box.mainwidth
+        = render partial: 'firms/widget'
 
-%table
-  %tr
-    %th Firm name
-    %th Short name
-    %th Firm type
-    %th Phone
-    %th Fax
-    %th Emergency phone
-    %th Website
-    %th Status
-    %th Document
-    %th
-    %th
-    %th
+    / .documents-container.mainwidth
+    /   .tabs
+    /     %p Recently Visited
+    /     %ul
+    /       %li Recent
+    /       %li All
+    /     .buttons.view-all
+    /       %b= link_to 'view all', notes_path
+    /   .container-box.mainwidth
 
-  - @firms.each do |firm|
-    %tr
-      %td= firm.firm_name
-      %td= firm.short_name
-      %td= firm.firm_type
-      %td= firm.phone
-      %td= firm.fax
-      %td= firm.emergency_phone
-      %td= firm.website
-      %td= firm.status
-      %td= firm.document_ids
-      %td= link_to 'Show', firm
-      %td= link_to 'Edit', edit_firm_path(firm)
-      %td= link_to 'Destroy', firm, :confirm => 'Are you sure?', :method => :delete
+  .sidebar
+    .documents-container.sidebarwidth
+      .tabs
+        %p Investments
+        %ul
+          %li Yours
+          %li Group
+      .container-box.sidebarwidth
+        = render partial: 'firms/widget'
 
-%br
+    .documents-container.sidebarwidth
+      .tabs
+        %p Emails
+        %ul
+          %li Yours
+          %li Group
+      .container-box.sidebarwidth
 
-= link_to 'New Firm', new_firm_path
+/ %table
+/   %tr
+/     %th Firm name
+/     %th Short name
+/     %th Firm type
+/     %th Phone
+/     %th Fax
+/     %th Emergency phone
+/     %th Website
+/     %th Status
+/     %th Document
+/     %th
+/     %th
+/     %th
+
+/   - @firms.each do |firm|
+/     %tr
+/       %td= firm.firm_name
+/       %td= firm.short_name
+/       %td= firm.firm_type
+/       %td= firm.phone
+/       %td= firm.fax
+/       %td= firm.emergency_phone
+/       %td= firm.website
+/       %td= firm.status
+/       %td= firm.document_ids
+/       %td= link_to 'Show', firm
+/       %td= link_to 'Edit', edit_firm_path(firm)
+/       %td= link_to 'Destroy', firm, :confirm => 'Are you sure?', :method => :delete
+
+/ %br
+
+/ = link_to 'New Firm', new_firm_path

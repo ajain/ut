@@ -3,9 +3,9 @@
     #utracs-tab
       %ul#nav
         %li
-          %p Notes
+          %p= link_to 'Home', :root
         %li
-          %a{:href => "#"} Firms
+          %p= link_to "Firms", firms_path
           %ul
             %li
               %a{:href => "#"} Prospects
@@ -23,7 +23,7 @@
             %li
               %a{:href => "#"} Other
         %li
-          %a{:href => "#"} Subscriptions
+          %p= link_to 'Notes', notes_path
           %ul
             %li
               %a{:href => "#"} LCC
@@ -37,6 +37,8 @@
               %a{:href => "#"} Natural Resources
             %li
               %a{:href => "#"} All
+        %li
+          %p= link_to 'Documents', documents_path
 
     #groups-tab
       %ul

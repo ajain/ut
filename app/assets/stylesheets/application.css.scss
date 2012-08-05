@@ -104,10 +104,11 @@ h1 a:link {
 
 .title {
   color: $darkblue;
-  padding: 20px 0px 10px 0px;
+  margin: 0 0 15px 0;
+  padding-top: 96px;
 }
 
-.content {
+.body {
   margin: 0 auto;
   width: 1200px;
 }
@@ -134,9 +135,15 @@ h1 a:link {
 .widget .row {
   padding: 7px;
   border-bottom: 1px solid $mediumgrey;
+  height: 20px;
+  font-size: 16px;
 }
 
-.info p {
+.widget .row p {
+  float: left;
+}
+
+.row p {
   font-size: 16px;
   padding-top: 3px;
 }
@@ -164,5 +171,5 @@ body {
   /* W3C Markup, IE10 Release Preview */
   background-image: radial-gradient(circle farthest-corner at center top, #FFFFFF 0%, #CFDBE8 100%);
   height: 1000px;
-  }
+}
 

@@ -25,6 +25,7 @@ gem 'haml-rails'
 gem 'haml'
 gem 'progress_bar'
 gem 'tire'
+gem 'jquery-hotkeys-rails'
 # gem 'ransack'
 
 # To use ActiveModel has_secure_password

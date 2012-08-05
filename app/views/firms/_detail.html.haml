@@ -1,23 +1,23 @@
 .detail
-  %ul
-    %li
-      %b Short Name:
-      = @firm.short_name
-    %li
-      %b Firm Type:
-      = @firm.firm_type
-    %li
-      %b Phone:
-      = number_to_phone(@firm.phone)
-    %li
-      %b Fax:
-      = number_to_phone(@firm.fax)
-    %li
-      %b Emergency:
-      = number_to_phone(@firm.emergency_phone)
-    %li
-      %b Website:
-      = @firm.website
-    %li
-      %b Status:
-      = @firm.status
+%ul
+  %li
+    %b Short Name:
+    = @firm.short_name
+  %li
+    %b Firm Type:
+    = @firm.firm_type
+  %li
+    %b Phone:
+    = number_to_phone(@firm.phone)
+  %li
+    %b Fax:
+    = number_to_phone(@firm.fax)
+  %li
+    %b Emergency:
+    = number_to_phone(@firm.emergency_phone)
+  %li
+    %b Website:
+    = @firm.website
+  %li
+    %b Status:
+    = @firm.status

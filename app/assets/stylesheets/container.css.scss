@@ -31,10 +31,6 @@ $mediumgrey: #D1D3D4;
   // overflow: scroll;
 }
 
-.title {
-  margin: 0 0 15px 0;
-}
-
 .tabs p {
   float: left;
   padding: 5px 10px 7px 0;
@@ -86,6 +82,13 @@ $mediumgrey: #D1D3D4;
 
 .buttons b {
   padding: 0 0 0 30px;
+
+}
+
+.row ul li {
+  float: left;
+  width: 250px;
+  overflow: hidden;
 
 }
 .container-box {
